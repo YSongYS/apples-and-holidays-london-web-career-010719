@@ -64,8 +64,9 @@ def all_supplies_in_holidays(holiday_hash)
     doing_line = ""
     doing.each do |fes,supply|
       doing_line << "#{fes.capitalize}: "
+      supply.map {|item| item.capitalize}
       doing_line << supply.join(", ")
-      supply.each {|item| print "#{item.capitalize}, "}
+
     end
   end
 end
