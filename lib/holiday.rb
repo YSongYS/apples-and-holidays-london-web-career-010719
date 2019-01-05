@@ -45,6 +45,7 @@ def add_new_holiday_with_supplies(holiday_hash, season, holiday_name, supply_arr
   season_kay = season.to_sym
   holiday_name_key = holiday_name.to_sym
   holiday_hash[season_kay][holiday_name_key] = supply_array
+  holiday_hash
 
 end
 
